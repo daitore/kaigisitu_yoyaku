@@ -26,7 +26,7 @@ class User(UserCreate):
 class RoomCreate(BaseModel):
     room_name: str = Field( max_length=12)
     capacity: int
-
+#継承
 class Room(RoomCreate):
     room_id: int
     room_name: str = Field( max_length=12)
